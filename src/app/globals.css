@@ -1,26 +1,285 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ========== RESET ========== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #08090d;
+  color: #c9cdd8;
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.2);
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #08090d; }
+::-webkit-scrollbar-thumb { background: #2a2d3a; border-radius: 2px; }
+
+/* ========== TYPOGRAPHY ========== */
+.font-display {
+  font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.text-accent { color: #22d3ee; }
+.text-violet { color: #818cf8; }
+.text-dim { color: #5a5e6e; }
+.text-bright { color: #edf0f7; }
+
+.gradient-accent {
+  background: linear-gradient(135deg, #22d3ee, #67e8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-cool {
+  background: linear-gradient(135deg, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========== LAYOUT ========== */
+.container-main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section-gap {
+  padding: 120px 0;
+}
+
+/* ========== BENTO CARD ========== */
+.bento {
+  background: #0e1017;
+  border: 1px solid #1a1d28;
+  border-radius: 24px;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bento::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0), transparent);
+  transition: background 0.5s ease;
+}
+
+.bento:hover {
+  border-color: #252836;
+  box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.5);
+}
+
+.bento:hover::before {
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.25), transparent);
+}
+
+/* ========== ICON BOX ========== */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 211, 238, 0.06);
+  border: 1px solid rgba(34, 211, 238, 0.1);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.bento:hover .icon-box {
+  background: rgba(34, 211, 238, 0.1);
+  border-color: rgba(34, 211, 238, 0.2);
+}
+
+/* ========== CHIP / TAG ========== */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: 10px;
+  background: #111320;
+  border: 1px solid #1e2030;
+  color: #8b90a3;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: #2e3148;
+  color: #c9cdd8;
+  background: #151728;
+}
+
+.chip-accent {
+  background: rgba(34, 211, 238, 0.06);
+  border-color: rgba(34, 211, 238, 0.12);
+  color: #22d3ee;
+}
+
+.chip-accent:hover {
+  background: rgba(34, 211, 238, 0.12);
+  border-color: rgba(34, 211, 238, 0.25);
+}
+
+/* ========== BUTTONS ========== */
+.btn-fill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #22d3ee, #06b6d4);
+  color: #08090d;
+  border: none;
+  border-radius: 14px;
+  font-weight: 650;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+.btn-fill:hover {
+  background: linear-gradient(135deg, #67e8f9, #22d3ee);
+  box-shadow: 0 8px 30px -8px rgba(34, 211, 238, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: transparent;
+  color: #c9cdd8;
+  border: 1px solid #252836;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  border-color: #3a3e52;
+  background: rgba(255,255,255,0.02);
+}
+
+/* ========== DIVIDER ========== */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #1a1d28, transparent);
+  margin: 0 auto;
+}
+
+/* ========== SCROLL REVEAL ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== MESH GRADIENT BG ========== */
+.mesh-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+  background:
+    radial-gradient(ellipse 50% 40% at 20% 20%, rgba(34, 211, 238, 0.03), transparent),
+    radial-gradient(ellipse 40% 50% at 80% 80%, rgba(129, 140, 248, 0.03), transparent),
+    radial-gradient(ellipse 60% 30% at 50% 0%, rgba(34, 211, 238, 0.015), transparent);
+}
+
+/* ========== GRAIN OVERLAY ========== */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ========== MARQUEE ========== */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  gap: 48px;
+  animation: marquee 35s linear infinite;
+  width: max-content;
+}
+
+/* ========== TIMELINE ========== */
+.timeline-line {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, #22d3ee 0%, #1a1d28 100%);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 18px;
+  top: 8px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #08090d;
+  border: 2px solid #22d3ee;
+  z-index: 2;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .container-main { padding: 0 20px; }
+  .section-gap { padding: 80px 0; }
+  .bento { padding: 24px; border-radius: 20px; }
 }
