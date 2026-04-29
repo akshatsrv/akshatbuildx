@@ -10,12 +10,12 @@ import { useEffect, useRef } from "react";
 const STACK = [
   {
     category: "Agentic & GenAI",
-    color: "#22d3ee",
+    color: "#0891b2",
     tools: ["Google ADK", "LangGraph", "LangChain", "RAG Architecture", "Prompt Engineering", "Agent Suite"],
   },
   {
     category: "Large Language Models",
-    color: "#5b8def",
+    color: "#2563eb",
     tools: ["OpenAI", "Azure OpenAI", "Gemini", "Gemma", "Llama", "Mistral", "Vanna AI"],
   },
   {
@@ -73,13 +73,13 @@ export default function Stack() {
       <div className="container-main">
         {/* Header */}
         <div className="reveal" style={{ marginBottom: 56, textAlign: "center" }}>
-          <div style={{ fontSize: 12, fontWeight: 600, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
+          <div style={{ fontSize: 12, fontWeight: 600, color: "#0891b2", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
             Tech Stack
           </div>
-          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#edf0f7", lineHeight: 1.2, marginBottom: 14 }}>
+          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#111827", lineHeight: 1.2, marginBottom: 14 }}>
             Tools & technologies
           </h2>
-          <p style={{ fontSize: 15, color: "#5a5e6e", maxWidth: 420, margin: "0 auto" }}>
+          <p style={{ fontSize: 15, color: "#9ca3af", maxWidth: 420, margin: "0 auto" }}>
             The stack I use to build, deploy, and evaluate AI systems.
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function Stack() {
                     flexShrink: 0,
                   }}
                 />
-                <span className="font-display" style={{ fontSize: 14, fontWeight: 700, color: "#edf0f7" }}>
+                <span className="font-display" style={{ fontSize: 14, fontWeight: 700, color: "#111827" }}>
                   {group.category}
                 </span>
               </div>
@@ -119,7 +119,7 @@ export default function Stack() {
                     className="chip"
                     style={{
                       borderColor: `${group.color}18`,
-                      color: "#8b90a3",
+                      color: "#6b7280",
                     }}
                   >
                     {tool}

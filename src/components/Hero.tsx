@@ -27,7 +27,6 @@ export default function Hero() {
         >
           {/* Left */}
           <div>
-            {/* Label */}
             <div
               className="chip chip-accent"
               style={{ marginBottom: 32, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.08em" }}
@@ -41,7 +40,7 @@ export default function Hero() {
                 fontSize: "clamp(40px, 5.5vw, 68px)",
                 fontWeight: 800,
                 lineHeight: 1.05,
-                color: "#edf0f7",
+                color: "#111827",
                 marginBottom: 24,
               }}
             >
@@ -55,7 +54,7 @@ export default function Hero() {
             <p
               style={{
                 fontSize: 16,
-                color: "#6b7085",
+                color: "#6b7280",
                 maxWidth: 460,
                 lineHeight: 1.8,
                 marginBottom: 40,
@@ -84,7 +83,7 @@ export default function Hero() {
                 gap: 48,
                 marginTop: 56,
                 paddingTop: 32,
-                borderTop: "1px solid #14161f",
+                borderTop: "1px solid #e5e7eb",
               }}
             >
               {[
@@ -96,7 +95,7 @@ export default function Hero() {
                   <div className="font-display gradient-accent" style={{ fontSize: 28, fontWeight: 800 }}>
                     {s.value}
                   </div>
-                  <div style={{ fontSize: 12, color: "#4a4e5e", marginTop: 4, letterSpacing: "0.02em" }}>
+                  <div style={{ fontSize: 12, color: "#9ca3af", marginTop: 4, letterSpacing: "0.02em" }}>
                     {s.label}
                   </div>
                 </div>
@@ -113,8 +112,9 @@ export default function Hero() {
               height: 440,
               borderRadius: 28,
               overflow: "hidden",
-              border: "1px solid #1a1d28",
+              border: "1px solid #e5e7eb",
               flexShrink: 0,
+              boxShadow: "0 20px 60px -20px rgba(0,0,0,0.1)",
             }}
           >
             <Image
@@ -133,7 +133,7 @@ export default function Hero() {
                 left: 0,
                 right: 0,
                 height: 120,
-                background: "linear-gradient(transparent, #08090d)",
+                background: "linear-gradient(transparent, rgba(255,255,255,0.9))",
               }}
             />
             {/* Name badge */}
@@ -145,10 +145,10 @@ export default function Hero() {
                 right: 24,
               }}
             >
-              <div className="font-display" style={{ fontSize: 18, fontWeight: 700, color: "#edf0f7" }}>
+              <div className="font-display" style={{ fontSize: 18, fontWeight: 700, color: "#111827" }}>
                 Akshat Shrivastava
               </div>
-              <div style={{ fontSize: 12, color: "#22d3ee", marginTop: 2 }}>
+              <div style={{ fontSize: 12, color: "#0891b2", marginTop: 2 }}>
                 GenAI / Data Scientist
               </div>
             </div>
@@ -164,10 +164,10 @@ export default function Hero() {
           left: 0,
           right: 0,
           overflow: "hidden",
-          borderTop: "1px solid #14161f",
-          borderBottom: "1px solid #14161f",
+          borderTop: "1px solid #f3f4f6",
+          borderBottom: "1px solid #f3f4f6",
           padding: "14px 0",
-          background: "rgba(8, 9, 13, 0.6)",
+          background: "rgba(249, 250, 251, 0.8)",
         }}
       >
         <div className="marquee-track">
@@ -184,7 +184,7 @@ export default function Hero() {
                   style={{
                     fontSize: 12,
                     fontWeight: 500,
-                    color: "#3a3e52",
+                    color: "#9ca3af",
                     textTransform: "uppercase",
                     letterSpacing: "0.1em",
                     whiteSpace: "nowrap",

@@ -42,10 +42,10 @@ export default function Navbar() {
         right: 0,
         zIndex: 1000,
         padding: scrolled ? "14px 0" : "22px 0",
-        background: scrolled ? "rgba(8, 9, 13, 0.9)" : "transparent",
+        background: scrolled ? "rgba(255, 255, 255, 0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(16px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(16px)" : "none",
-        borderBottom: scrolled ? "1px solid #14161f" : "1px solid transparent",
+        borderBottom: scrolled ? "1px solid #e5e7eb" : "1px solid transparent",
         transition: "all 0.4s ease",
       }}
     >
@@ -62,8 +62,8 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
           <Image src="/abx-logo.png" alt="ABX" width={36} height={36} style={{ borderRadius: 10 }} />
-          <span className="font-display" style={{ fontSize: 16, fontWeight: 700, color: "#edf0f7" }}>
-            Akshat Build <span style={{ color: "#22d3ee" }}>X</span>
+          <span className="font-display" style={{ fontSize: 16, fontWeight: 700, color: "#111827" }}>
+            Akshat Build <span style={{ color: "#0891b2" }}>X</span>
           </span>
         </a>
 
@@ -79,13 +79,13 @@ export default function Navbar() {
                   padding: "8px 14px",
                   fontSize: 13,
                   fontWeight: 500,
-                  color: isActive ? "#22d3ee" : "#6b7085",
+                  color: isActive ? "#0891b2" : "#6b7280",
                   textDecoration: "none",
                   borderRadius: 8,
                   transition: "color 0.3s ease",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.color = "#c9cdd8"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.color = isActive ? "#22d3ee" : "#6b7085"; }}
+                onMouseEnter={(e) => { e.currentTarget.style.color = "#111827"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.color = isActive ? "#0891b2" : "#6b7280"; }}
               >
                 {link.label}
               </a>
@@ -104,10 +104,10 @@ export default function Navbar() {
           style={{
             display: "none",
             background: "none",
-            border: "1px solid #1a1d28",
+            border: "1px solid #e5e7eb",
             borderRadius: 10,
             padding: "7px 11px",
-            color: "#c9cdd8",
+            color: "#374151",
             cursor: "pointer",
             fontSize: 18,
           }}
@@ -119,13 +119,13 @@ export default function Navbar() {
 
       {/* Mobile Panel */}
       {mobileOpen && (
-        <div style={{ padding: "12px 32px 20px", background: "rgba(8,9,13,0.96)", borderBottom: "1px solid #14161f" }}>
+        <div style={{ padding: "12px 32px 20px", background: "rgba(255,255,255,0.98)", borderBottom: "1px solid #e5e7eb" }}>
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              style={{ display: "block", padding: "10px 0", fontSize: 14, color: "#6b7085", textDecoration: "none" }}
+              style={{ display: "block", padding: "10px 0", fontSize: 14, color: "#6b7280", textDecoration: "none" }}
             >
               {link.label}
             </a>

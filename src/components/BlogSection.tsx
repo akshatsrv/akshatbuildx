@@ -46,7 +46,7 @@ export default function BlogSection() {
               style={{
                 fontSize: 12,
                 fontWeight: 600,
-                color: "#22d3ee",
+                color: "#0891b2",
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
                 marginBottom: 10,
@@ -59,7 +59,7 @@ export default function BlogSection() {
               style={{
                 fontSize: "clamp(24px, 3vw, 34px)",
                 fontWeight: 800,
-                color: "#edf0f7",
+                color: "#111827",
                 lineHeight: 1.2,
                 marginBottom: 8,
               }}

@@ -5,7 +5,7 @@ import { IconGlobe, IconMic, IconBrain, IconLayers } from "./Icons";
 
 const SERVICES = [
   {
-    icon: <IconGlobe size={24} color="#22d3ee" />,
+    icon: <IconGlobe size={24} color="#0891b2" />,
     title: "Brand Collaboration",
     desc: "Partner with me to amplify your AI brand through high-impact content, product demos, and technical storytelling. From webinars to deep-dive tutorials on Akshat Build X — let's create content that drives both conversation and conversion.",
     cta: "Partner Up",
@@ -57,13 +57,13 @@ export default function Services() {
       <div className="container-main">
         {/* Header */}
         <div className="reveal" style={{ marginBottom: 56, textAlign: "center" }}>
-          <div style={{ fontSize: 12, fontWeight: 600, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
+          <div style={{ fontSize: 12, fontWeight: 600, color: "#0891b2", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
             Services
           </div>
-          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#edf0f7", lineHeight: 1.2, marginBottom: 14 }}>
+          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#111827", lineHeight: 1.2, marginBottom: 14 }}>
             How we can work together
           </h2>
-          <p style={{ fontSize: 15, color: "#5a5e6e", maxWidth: 480, margin: "0 auto" }}>
+          <p style={{ fontSize: 15, color: "#9ca3af", maxWidth: 480, margin: "0 auto" }}>
             Whether it&apos;s a collaboration, a speaking gig, or building something from scratch.
           </p>
         </div>
@@ -82,10 +82,10 @@ export default function Services() {
               <div className="icon-box" style={{ marginBottom: 22 }}>
                 {s.icon}
               </div>
-              <h3 className="font-display" style={{ fontSize: 19, fontWeight: 700, color: "#edf0f7", marginBottom: 10 }}>
+              <h3 className="font-display" style={{ fontSize: 19, fontWeight: 700, color: "#111827", marginBottom: 10 }}>
                 {s.title}
               </h3>
-              <p style={{ fontSize: 14, color: "#6b7085", lineHeight: 1.75, marginBottom: 24, flex: 1 }}>
+              <p style={{ fontSize: 14, color: "#6b7280", lineHeight: 1.75, marginBottom: 24, flex: 1 }}>
                 {s.desc}
               </p>
               <a href={s.href} className="btn-outline" style={{ alignSelf: "flex-start", padding: "10px 22px", fontSize: 13 }}>

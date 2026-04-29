@@ -58,7 +58,7 @@ export default function Newsletter() {
               left: 0,
               right: 0,
               height: 1,
-              background: "linear-gradient(90deg, transparent, #22d3ee, transparent)",
+              background: "linear-gradient(90deg, transparent, #0891b2, transparent)",
             }}
           />
 
@@ -75,9 +75,9 @@ export default function Newsletter() {
             <div style={{ padding: "56px 48px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 20 }}>
                 <div className="icon-box" style={{ width: 40, height: 40, borderRadius: 12 }}>
-                  <IconMail size={18} color="#22d3ee" />
+                  <IconMail size={18} color="#0891b2" />
                 </div>
-                <span style={{ fontSize: 12, fontWeight: 600, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                <span style={{ fontSize: 12, fontWeight: 600, color: "#0891b2", textTransform: "uppercase", letterSpacing: "0.1em" }}>
                   Newsletter
                 </span>
               </div>
@@ -87,7 +87,7 @@ export default function Newsletter() {
                 style={{
                   fontSize: "clamp(24px, 3vw, 34px)",
                   fontWeight: 800,
-                  color: "#edf0f7",
+                  color: "#111827",
                   lineHeight: 1.2,
                   marginBottom: 14,
                 }}
@@ -95,7 +95,7 @@ export default function Newsletter() {
                 Stay ahead with Akshat
               </h2>
 
-              <p style={{ fontSize: 15, color: "#6b7085", lineHeight: 1.75, marginBottom: 8, maxWidth: 400 }}>
+              <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.75, marginBottom: 8, maxWidth: 400 }}>
                 Get the latest blogs, AI deep dives, project breakdowns, and
                 actionable insights delivered straight to your inbox. No spam — just signal.
               </p>
@@ -107,10 +107,10 @@ export default function Newsletter() {
                   { value: "Free", label: "Always" },
                 ].map((s) => (
                   <div key={s.label}>
-                    <div className="font-display" style={{ fontSize: 16, fontWeight: 700, color: "#22d3ee" }}>
+                    <div className="font-display" style={{ fontSize: 16, fontWeight: 700, color: "#0891b2" }}>
                       {s.value}
                     </div>
-                    <div style={{ fontSize: 11, color: "#4a4e5e", marginTop: 2 }}>
+                    <div style={{ fontSize: 11, color: "#d1d5db", marginTop: 2 }}>
                       {s.label}
                     </div>
                   </div>
@@ -123,7 +123,7 @@ export default function Newsletter() {
               style={{
                 padding: "56px 48px",
                 background: "rgba(255,255,255,0.015)",
-                borderLeft: "1px solid #14161f",
+                borderLeft: "1px solid #e5e7eb",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -144,14 +144,14 @@ export default function Newsletter() {
                       margin: "0 auto 20px",
                     }}
                   >
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0891b2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
-                  <div className="font-display" style={{ fontSize: 20, fontWeight: 700, color: "#edf0f7", marginBottom: 8 }}>
+                  <div className="font-display" style={{ fontSize: 20, fontWeight: 700, color: "#111827", marginBottom: 8 }}>
                     You&apos;re in!
                   </div>
-                  <p style={{ fontSize: 14, color: "#6b7085" }}>
+                  <p style={{ fontSize: 14, color: "#6b7280" }}>
                     Welcome aboard. Expect your first email soon.
                   </p>
                   <button
@@ -160,7 +160,7 @@ export default function Newsletter() {
                       marginTop: 16,
                       background: "none",
                       border: "none",
-                      color: "#22d3ee",
+                      color: "#0891b2",
                       fontSize: 13,
                       cursor: "pointer",
                       textDecoration: "underline",
@@ -172,10 +172,10 @@ export default function Newsletter() {
                 </div>
               ) : (
                 <>
-                  <div className="font-display" style={{ fontSize: 18, fontWeight: 700, color: "#edf0f7", marginBottom: 8 }}>
+                  <div className="font-display" style={{ fontSize: 18, fontWeight: 700, color: "#111827", marginBottom: 8 }}>
                     Join the community
                   </div>
-                  <p style={{ fontSize: 13, color: "#5a5e6e", marginBottom: 24, lineHeight: 1.6 }}>
+                  <p style={{ fontSize: 13, color: "#9ca3af", marginBottom: 24, lineHeight: 1.6 }}>
                     AI builders, engineers, and curious minds — all in one inbox.
                   </p>
 
@@ -192,14 +192,14 @@ export default function Newsletter() {
                           padding: "14px 18px",
                           fontSize: 14,
                           background: "#0a0b12",
-                          border: "1px solid #1e2030",
+                          border: "1px solid #f3f4f6",
                           borderRadius: 12,
-                          color: "#edf0f7",
+                          color: "#111827",
                           outline: "none",
                           transition: "border-color 0.3s ease",
                         }}
-                        onFocus={(e) => { e.currentTarget.style.borderColor = "#22d3ee40"; }}
-                        onBlur={(e) => { e.currentTarget.style.borderColor = "#1e2030"; }}
+                        onFocus={(e) => { e.currentTarget.style.borderColor = "#0891b240"; }}
+                        onBlur={(e) => { e.currentTarget.style.borderColor = "#f3f4f6"; }}
                       />
                     </div>
                     <button type="submit" className="btn-fill" style={{ width: "100%", justifyContent: "center" }}>
@@ -208,7 +208,7 @@ export default function Newsletter() {
                     </button>
                   </form>
 
-                  <p style={{ fontSize: 11, color: "#3a3e52", marginTop: 14, lineHeight: 1.5 }}>
+                  <p style={{ fontSize: 11, color: "#9ca3af", marginTop: 14, lineHeight: 1.5 }}>
                     Unsubscribe anytime. No spam, ever.
                   </p>
                 </>
@@ -225,7 +225,7 @@ export default function Newsletter() {
           }
           .newsletter-grid > div:last-child {
             border-left: none !important;
-            border-top: 1px solid #14161f;
+            border-top: 1px solid #e5e7eb;
           }
         }
       `}</style>

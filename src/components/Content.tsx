@@ -27,10 +27,10 @@ export default function Projects() {
       <div className="container-main">
         {/* Header */}
         <div className="reveal" style={{ marginBottom: 56, textAlign: "center" }}>
-          <div style={{ fontSize: 12, fontWeight: 600, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
+          <div style={{ fontSize: 12, fontWeight: 600, color: "#0891b2", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
             Projects & Content
           </div>
-          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#edf0f7", lineHeight: 1.2 }}>
+          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#111827", lineHeight: 1.2 }}>
             Featured work
           </h2>
         </div>
@@ -50,7 +50,7 @@ export default function Projects() {
           <div
             style={{
               position: "relative",
-              background: "#f8f8f8",
+              background: "#f9fafb",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -68,7 +68,7 @@ export default function Projects() {
           {/* Content */}
           <div style={{ padding: "32px 36px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-              <h3 className="font-display" style={{ fontSize: 22, fontWeight: 800, color: "#edf0f7" }}>
+              <h3 className="font-display" style={{ fontSize: 22, fontWeight: 800, color: "#111827" }}>
                 Akshat Build X
               </h3>
               <div
@@ -88,10 +88,10 @@ export default function Projects() {
                 </span>
               </div>
             </div>
-            <p style={{ fontSize: 15, color: "#22d3ee", fontWeight: 600, marginBottom: 10 }}>
+            <p style={{ fontSize: 15, color: "#0891b2", fontWeight: 600, marginBottom: 10 }}>
               Building the Future with AI & Technology
             </p>
-            <p style={{ fontSize: 13, color: "#6b7085", lineHeight: 1.7, marginBottom: 20, maxWidth: 440 }}>
+            <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.7, marginBottom: 20, maxWidth: 440 }}>
               Deep dives into GenAI, agentic systems, RAG pipelines, and production ML.
               Practical tutorials and real-world project breakdowns.
             </p>
@@ -119,15 +119,15 @@ export default function Projects() {
           {/* Gyaan.ai */}
           <div className="reveal bento">
             <div className="icon-box" style={{ marginBottom: 18 }}>
-              <IconGlobe size={22} color="#5b8def" />
+              <IconGlobe size={22} color="#2563eb" />
             </div>
-            <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#edf0f7", marginBottom: 6 }}>
+            <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#111827", marginBottom: 6 }}>
               Gyaan.ai
             </h3>
-            <div style={{ fontSize: 12, color: "#5b8def", fontWeight: 600, marginBottom: 12 }}>
+            <div style={{ fontSize: 12, color: "#2563eb", fontWeight: 600, marginBottom: 12 }}>
               Socratic AI Tutor
             </div>
-            <p style={{ fontSize: 13, color: "#6b7085", lineHeight: 1.7, marginBottom: 16 }}>
+            <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.7, marginBottom: 16 }}>
               Personalized AI tutoring with RAG, LangGraph, MongoDB Atlas vector search,
               and local Gemma LLMs. Adapts to student grade level.
             </p>
@@ -143,13 +143,13 @@ export default function Projects() {
             <div className="icon-box" style={{ marginBottom: 18 }}>
               <IconTarget size={22} color="#34d399" />
             </div>
-            <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#edf0f7", marginBottom: 6 }}>
+            <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#111827", marginBottom: 6 }}>
               WhatsApp Commerce
             </h3>
             <div style={{ fontSize: 12, color: "#34d399", fontWeight: 600, marginBottom: 12 }}>
               Conversational Commerce
             </div>
-            <p style={{ fontSize: 13, color: "#6b7085", lineHeight: 1.7, marginBottom: 16 }}>
+            <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.7, marginBottom: 16 }}>
               End-to-end commerce platform for US & Mexico via WhatsApp.
               Google ADK + LangGraph + Infobip CPaaS with multi-turn ordering.
             </p>
@@ -165,13 +165,13 @@ export default function Projects() {
             <div className="icon-box" style={{ marginBottom: 18 }}>
               <IconCpu size={22} color="#f59e0b" />
             </div>
-            <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#edf0f7", marginBottom: 6 }}>
+            <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#111827", marginBottom: 6 }}>
               AI Legal Assistant
             </h3>
             <div style={{ fontSize: 12, color: "#f59e0b", fontWeight: 600, marginBottom: 12 }}>
               Contract Intelligence
             </div>
-            <p style={{ fontSize: 13, color: "#6b7085", lineHeight: 1.7, marginBottom: 16 }}>
+            <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.7, marginBottom: 16 }}>
               Automated contract clause extraction and compliance workflows
               with RAG architecture and precision/recall evaluation.
             </p>

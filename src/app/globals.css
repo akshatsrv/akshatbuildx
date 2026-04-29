@@ -18,8 +18,8 @@ html {
 }
 
 body {
-  background: #08090d;
-  color: #c9cdd8;
+  background: #ffffff;
+  color: #374151;
   font-family: var(--font-inter), "Inter", system-ui, sans-serif;
   overflow-x: hidden;
   line-height: 1.7;
@@ -27,13 +27,13 @@ body {
 }
 
 ::selection {
-  background: rgba(34, 211, 238, 0.2);
-  color: #fff;
+  background: rgba(8, 145, 178, 0.15);
+  color: #111827;
 }
 
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #08090d; }
-::-webkit-scrollbar-thumb { background: #2a2d3a; border-radius: 2px; }
+::-webkit-scrollbar-track { background: #f9fafb; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
 
 /* ========== TYPOGRAPHY ========== */
 .font-display {
@@ -41,20 +41,20 @@ body {
   letter-spacing: -0.02em;
 }
 
-.text-accent { color: #22d3ee; }
-.text-violet { color: #818cf8; }
-.text-dim { color: #5a5e6e; }
-.text-bright { color: #edf0f7; }
+.text-accent { color: #0891b2; }
+.text-violet { color: #7c3aed; }
+.text-dim { color: #9ca3af; }
+.text-bright { color: #111827; }
 
 .gradient-accent {
-  background: linear-gradient(135deg, #22d3ee, #67e8f9);
+  background: linear-gradient(135deg, #0891b2, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-cool {
-  background: linear-gradient(135deg, #818cf8, #c084fc);
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -73,13 +73,13 @@ body {
 
 /* ========== BENTO CARD ========== */
 .bento {
-  background: #0e1017;
-  border: 1px solid #1a1d28;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 24px;
   padding: 36px;
   position: relative;
   overflow: hidden;
-  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .bento::before {
@@ -89,17 +89,17 @@ body {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0), transparent);
+  background: linear-gradient(90deg, transparent, rgba(8, 145, 178, 0), transparent);
   transition: background 0.5s ease;
 }
 
 .bento:hover {
-  border-color: #252836;
-  box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.5);
+  border-color: #d1d5db;
+  box-shadow: 0 12px 40px -16px rgba(0, 0, 0, 0.08);
 }
 
 .bento:hover::before {
-  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(8, 145, 178, 0.3), transparent);
 }
 
 /* ========== ICON BOX ========== */
@@ -110,15 +110,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(34, 211, 238, 0.06);
-  border: 1px solid rgba(34, 211, 238, 0.1);
+  background: #f0fdfa;
+  border: 1px solid #ccfbf1;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
 .bento:hover .icon-box {
-  background: rgba(34, 211, 238, 0.1);
-  border-color: rgba(34, 211, 238, 0.2);
+  background: #e0f7fa;
+  border-color: #99f6e4;
 }
 
 /* ========== CHIP / TAG ========== */
@@ -131,28 +131,28 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   border-radius: 10px;
-  background: #111320;
-  border: 1px solid #1e2030;
-  color: #8b90a3;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .chip:hover {
-  border-color: #2e3148;
-  color: #c9cdd8;
-  background: #151728;
+  border-color: #d1d5db;
+  color: #374151;
+  background: #e5e7eb;
 }
 
 .chip-accent {
-  background: rgba(34, 211, 238, 0.06);
-  border-color: rgba(34, 211, 238, 0.12);
-  color: #22d3ee;
+  background: #f0fdfa;
+  border-color: #ccfbf1;
+  color: #0891b2;
 }
 
 .chip-accent:hover {
-  background: rgba(34, 211, 238, 0.12);
-  border-color: rgba(34, 211, 238, 0.25);
+  background: #e0f7fa;
+  border-color: #99f6e4;
 }
 
 /* ========== BUTTONS ========== */
@@ -161,8 +161,8 @@ body {
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  background: linear-gradient(135deg, #22d3ee, #06b6d4);
-  color: #08090d;
+  background: linear-gradient(135deg, #0891b2, #0e7490);
+  color: #ffffff;
   border: none;
   border-radius: 14px;
   font-weight: 650;
@@ -173,8 +173,8 @@ body {
 }
 
 .btn-fill:hover {
-  background: linear-gradient(135deg, #67e8f9, #22d3ee);
-  box-shadow: 0 8px 30px -8px rgba(34, 211, 238, 0.3);
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  box-shadow: 0 8px 30px -8px rgba(8, 145, 178, 0.35);
   transform: translateY(-1px);
 }
 
@@ -184,8 +184,8 @@ body {
   gap: 10px;
   padding: 14px 28px;
   background: transparent;
-  color: #c9cdd8;
-  border: 1px solid #252836;
+  color: #374151;
+  border: 1px solid #d1d5db;
   border-radius: 14px;
   font-weight: 600;
   font-size: 14px;
@@ -195,14 +195,14 @@ body {
 }
 
 .btn-outline:hover {
-  border-color: #3a3e52;
-  background: rgba(255,255,255,0.02);
+  border-color: #9ca3af;
+  background: #f9fafb;
 }
 
 /* ========== DIVIDER ========== */
 .divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #1a1d28, transparent);
+  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
   margin: 0 auto;
 }
 
@@ -217,29 +217,6 @@ body {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* ========== MESH GRADIENT BG ========== */
-.mesh-bg {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.4;
-  background:
-    radial-gradient(ellipse 50% 40% at 20% 20%, rgba(34, 211, 238, 0.03), transparent),
-    radial-gradient(ellipse 40% 50% at 80% 80%, rgba(129, 140, 248, 0.03), transparent),
-    radial-gradient(ellipse 60% 30% at 50% 0%, rgba(34, 211, 238, 0.015), transparent);
-}
-
-/* ========== GRAIN OVERLAY ========== */
-.grain {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9998;
-  opacity: 0.02;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 /* ========== MARQUEE ========== */
@@ -262,7 +239,7 @@ body {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(180deg, #22d3ee 0%, #1a1d28 100%);
+  background: linear-gradient(180deg, #0891b2 0%, #e5e7eb 100%);
 }
 
 .timeline-dot {
@@ -272,8 +249,8 @@ body {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #08090d;
-  border: 2px solid #22d3ee;
+  background: #ffffff;
+  border: 2px solid #0891b2;
   z-index: 2;
 }
 

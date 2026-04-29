@@ -71,10 +71,10 @@ export default function Experience() {
       <div className="container-main">
         {/* Header */}
         <div className="reveal" style={{ marginBottom: 56, textAlign: "center" }}>
-          <div style={{ fontSize: 12, fontWeight: 600, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
+          <div style={{ fontSize: 12, fontWeight: 600, color: "#0891b2", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
             Experience
           </div>
-          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#edf0f7", lineHeight: 1.2 }}>
+          <h2 className="font-display" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 800, color: "#111827", lineHeight: 1.2 }}>
             Work history
           </h2>
         </div>
@@ -93,10 +93,10 @@ export default function Experience() {
               <div className="bento">
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, marginBottom: 14, flexWrap: "wrap" }}>
                   <div>
-                    <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#edf0f7" }}>
+                    <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#111827" }}>
                       {r.role}
                     </h3>
-                    <div style={{ fontSize: 14, color: "#22d3ee", marginTop: 3 }}>{r.company}</div>
+                    <div style={{ fontSize: 14, color: "#0891b2", marginTop: 3 }}>{r.company}</div>
                   </div>
                   <div className="chip" style={{ fontSize: 11 }}>{r.period}</div>
                 </div>
@@ -110,7 +110,7 @@ export default function Experience() {
                         paddingLeft: 18,
                         marginBottom: 8,
                         fontSize: 13,
-                        color: "#6b7085",
+                        color: "#6b7280",
                         lineHeight: 1.65,
                       }}
                     >
@@ -122,7 +122,7 @@ export default function Experience() {
                           width: 5,
                           height: 5,
                           borderRadius: "50%",
-                          background: "#2a2d3a",
+                          background: "#e5e7eb",
                         }}
                       />
                       {h}
@@ -137,8 +137,8 @@ export default function Experience() {
         {/* Certifications */}
         <div className="reveal" style={{ marginTop: 80 }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 32 }}>
-            <IconAward size={20} color="#22d3ee" />
-            <h3 className="font-display" style={{ fontSize: 20, fontWeight: 700, color: "#edf0f7" }}>
+            <IconAward size={20} color="#0891b2" />
+            <h3 className="font-display" style={{ fontSize: 20, fontWeight: 700, color: "#111827" }}>
               Certifications
             </h3>
           </div>
@@ -166,8 +166,8 @@ export default function Experience() {
                 }}
               >
                 <div>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: "#c9cdd8" }}>{c.name}</div>
-                  <div style={{ fontSize: 11, color: "#4a4e5e", marginTop: 2 }}>{c.from}</div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: "#374151" }}>{c.name}</div>
+                  <div style={{ fontSize: 11, color: "#d1d5db", marginTop: 2 }}>{c.from}</div>
                 </div>
                 <div className="chip" style={{ fontSize: 10, padding: "4px 10px" }}>{c.year}</div>
               </div>
