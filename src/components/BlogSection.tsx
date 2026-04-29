@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { IconArrowRight } from "./Icons";
 
 export default function BlogSection() {
