@@ -167,7 +167,7 @@ export default function Experience() {
               >
                 <div>
                   <div style={{ fontSize: 13, fontWeight: 600, color: "#374151" }}>{c.name}</div>
-                  <div style={{ fontSize: 11, color: "#d1d5db", marginTop: 2 }}>{c.from}</div>
+                  <div style={{ fontSize: 11, color: "#6b7280", marginTop: 2 }}>{c.from}</div>
                 </div>
                 <div className="chip" style={{ fontSize: 10, padding: "4px 10px" }}>{c.year}</div>
               </div>

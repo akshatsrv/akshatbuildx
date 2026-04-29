@@ -110,7 +110,7 @@ export default function Newsletter() {
                     <div className="font-display" style={{ fontSize: 16, fontWeight: 700, color: "#0891b2" }}>
                       {s.value}
                     </div>
-                    <div style={{ fontSize: 11, color: "#d1d5db", marginTop: 2 }}>
+                    <div style={{ fontSize: 11, color: "#9ca3af", marginTop: 2 }}>
                       {s.label}
                     </div>
                   </div>
@@ -122,7 +122,7 @@ export default function Newsletter() {
             <div
               style={{
                 padding: "56px 48px",
-                background: "rgba(255,255,255,0.015)",
+                background: "#f9fafb",
                 borderLeft: "1px solid #e5e7eb",
                 display: "flex",
                 flexDirection: "column",
@@ -136,8 +136,8 @@ export default function Newsletter() {
                       width: 56,
                       height: 56,
                       borderRadius: 16,
-                      background: "rgba(34, 211, 238, 0.08)",
-                      border: "1px solid rgba(34, 211, 238, 0.15)",
+                      background: "rgba(8, 145, 178, 0.08)",
+                      border: "1px solid rgba(8, 145, 178, 0.15)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -191,7 +191,7 @@ export default function Newsletter() {
                           width: "100%",
                           padding: "14px 18px",
                           fontSize: 14,
-                          background: "#0a0b12",
+                          background: "#f9fafb",
                           border: "1px solid #f3f4f6",
                           borderRadius: 12,
                           color: "#111827",

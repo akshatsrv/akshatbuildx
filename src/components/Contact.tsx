@@ -80,7 +80,7 @@ export default function Contact() {
             >
               <div className="icon-box">{link.icon}</div>
               <div>
-                <div style={{ fontSize: 11, color: "#d1d5db", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 4 }}>
+                <div style={{ fontSize: 11, color: "#9ca3af", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 4 }}>
                   {link.label}
                 </div>
                 <div style={{ fontSize: 14, color: "#374151", fontWeight: 500 }}>
@@ -121,7 +121,7 @@ export default function Contact() {
         >
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <Image src="/abx-logo.png" alt="ABX" width={24} height={24} style={{ borderRadius: 6 }} />
-            <span className="font-display" style={{ fontSize: 13, fontWeight: 600, color: "#e5e7eb" }}>
+            <span className="font-display" style={{ fontSize: 13, fontWeight: 600, color: "#111827" }}>
               Akshat Build X
             </span>
             <span style={{ fontSize: 12, color: "#6b7280" }}>
