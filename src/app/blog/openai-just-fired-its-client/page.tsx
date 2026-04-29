@@ -61,6 +61,24 @@ export default function BlogPost() {
             </p>
           </div>
 
+          {/* Featured Image */}
+          <div className="reveal" style={{ 
+            position: "relative", 
+            width: "100%", 
+            height: 400, 
+            borderRadius: 24, 
+            overflow: "hidden", 
+            marginBottom: 48,
+            border: "1px solid #14161f"
+          }}>
+            <Image 
+              src="/blog-featured.png" 
+              alt="OpenAI and Microsoft" 
+              fill 
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+
           {/* Author Meta */}
           <div className="reveal" style={{ 
             display: "flex", 

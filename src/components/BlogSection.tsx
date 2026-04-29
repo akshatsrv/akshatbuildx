@@ -44,32 +44,22 @@ export default function BlogSection() {
             
             {/* Visual/Image Area */}
             <div style={{ 
-              background: "linear-gradient(135deg, #0e1017 0%, #1a1d28 100%)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: 40,
+              position: "relative",
+              background: "#08090d",
               borderRight: "1px solid #14161f",
-              position: "relative"
+              overflow: "hidden"
             }}>
-              {/* Abstract Design Element */}
+              <Image 
+                src="/blog-featured.png" 
+                alt="OpenAI and Microsoft Partnership" 
+                fill
+                style={{ objectFit: "cover", opacity: 0.8 }}
+              />
               <div style={{ 
-                width: "80%", 
-                height: "80%", 
-                borderRadius: 24, 
-                background: "rgba(34, 211, 238, 0.03)", 
-                border: "1px solid rgba(34, 211, 238, 0.1)",
-                display: "flex",
-                flexDirection: "column",
-                padding: 30,
-                gap: 20
-              }}>
-                <div style={{ height: 12, width: "40%", background: "rgba(34, 211, 238, 0.2)", borderRadius: 4 }} />
-                <div style={{ height: 12, width: "100%", background: "rgba(34, 211, 238, 0.1)", borderRadius: 4 }} />
-                <div style={{ height: 12, width: "80%", background: "rgba(34, 211, 238, 0.1)", borderRadius: 4 }} />
-                <div style={{ height: 12, width: "60%", background: "rgba(34, 211, 238, 0.1)", borderRadius: 4 }} />
-                <div style={{ marginTop: "auto", height: 40, width: 40, borderRadius: "50%", background: "rgba(34, 211, 238, 0.2)" }} />
-              </div>
+                position: "absolute", 
+                inset: 0, 
+                background: "linear-gradient(90deg, transparent 60%, #0e1017 100%)" 
+              }} />
               
               <div style={{ 
                 position: "absolute", 
@@ -80,7 +70,11 @@ export default function BlogSection() {
                 color: "#22d3ee", 
                 textTransform: "uppercase", 
                 letterSpacing: "0.2em",
-                opacity: 0.5
+                zIndex: 2,
+                background: "rgba(8, 9, 13, 0.6)",
+                padding: "4px 8px",
+                borderRadius: 4,
+                backdropFilter: "blur(4px)"
               }}>
                 Editorial / Analysis
               </div>
