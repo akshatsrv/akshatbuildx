@@ -182,27 +182,7 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Latest Blog */}
-          <div className="reveal bento">
-            <div className="icon-box" style={{ marginBottom: 18, background: "rgba(129, 140, 248, 0.06)", borderColor: "rgba(129, 140, 248, 0.1)" }}>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-              </svg>
-            </div>
-            <h3 className="font-display" style={{ fontSize: 17, fontWeight: 700, color: "#edf0f7", marginBottom: 6 }}>
-              Latest Blog
-            </h3>
-            <div style={{ fontSize: 12, color: "#818cf8", fontWeight: 600, marginBottom: 12 }}>
-              OpenAI vs Microsoft
-            </div>
-            <p style={{ fontSize: 13, color: "#6b7085", lineHeight: 1.7, marginBottom: 16 }}>
-              Deep dive into the restructured OpenAI-Microsoft deal and what it means for multi-cloud AI infrastructure.
-            </p>
-            <a href="/blog/openai-just-fired-its-client" className="btn-outline" style={{ padding: "8px 16px", fontSize: 12, width: "100%", justifyContent: "center" }}>
-              Read Analysis
-            </a>
-          </div>
+
         </div>
       </div>
 
