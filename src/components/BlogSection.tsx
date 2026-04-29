@@ -105,7 +105,7 @@ export default function BlogSection() {
 
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "auto" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                  <div style={{ width: 32, height: 32, borderRadius: "50%", background: "#111320", border: "1px solid #22d3ee", display: "flex", alignItems: "center", justifyCenter: "center", fontSize: 12, fontWeight: 800, color: "#22d3ee" }}>A</div>
+                  <div style={{ width: 32, height: 32, borderRadius: "50%", background: "#111320", border: "1px solid #22d3ee", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800, color: "#22d3ee" }}>A</div>
                   <span style={{ fontSize: 13, fontWeight: 600, color: "#edf0f7" }}>Akshat Shrivastava</span>
                 </div>
                 
