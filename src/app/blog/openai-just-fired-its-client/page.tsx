@@ -72,7 +72,7 @@ export default function BlogPost() {
             border: "1px solid #14161f"
           }}>
             <Image 
-              src="/blog-featured.png" 
+              src="/blog-featured.jpg" 
               alt="OpenAI and Microsoft" 
               fill 
               style={{ objectFit: "cover" }}

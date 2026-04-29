@@ -51,7 +51,7 @@ export default function BlogSection() {
               overflow: "hidden"
             }}>
               <Image 
-                src="/blog-featured.png" 
+                src="/blog-featured.jpg" 
                 alt="OpenAI and Microsoft Partnership" 
                 fill
                 style={{ objectFit: "cover", opacity: 0.8 }}
