@@ -5,6 +5,16 @@ import Image from "next/image";
 
 const POSTS = [
   {
+    slug: "google-committed-40-billion-to-anthropic",
+    title: "google just committed $40 billion to anthropic — and it's a bigger deal than the number",
+    subtitle:
+      "when your biggest rival is also your biggest backer, something fundamental has shifted in ai",
+    date: "May 1, 2026",
+    readTime: "5 min read",
+    tag: "Industry Analysis",
+    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80",
+  },
+  {
     slug: "openai-just-fired-its-client",
     title: "OpenAI just fired its most important client — kinda",
     subtitle:
